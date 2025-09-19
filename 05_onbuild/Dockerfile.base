@@ -1,0 +1,17 @@
+#  ベースイメージの設定
+FROM ubuntu:18.04
+
+# Nginx のインストール
+RUN apt-get -y update && apt-get -y upgrade 
+RUN apt-get -y install nginx
+
+#  ポート指定
+EXPOSE 80
+
+# Web コンテンツの配置
+# onbuild : 다음번째 빌드할 때 add 명령 실행해라
+# add     :  website.tar 파일을 /var/www/html에 풀어라
+ONBUILD ADD website.tar /var/www/html/
+
+# Nginx の実行
+CMD ["nginx", "-g", "daemon off;"]

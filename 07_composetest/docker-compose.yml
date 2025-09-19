@@ -1,0 +1,15 @@
+services:
+  web:
+  # dockerfile 가지고 빌드해라
+    build: .
+  # flask 는 보통 5000번에서 서비스
+    ports:
+      - "8000:5000"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_DEBUG: 1
+    
+  redis:
+    image: "redis:alpine"
+

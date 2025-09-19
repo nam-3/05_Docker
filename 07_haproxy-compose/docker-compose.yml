@@ -1,0 +1,29 @@
+# docker network create mynetwork
+# docker run -d --name web1 --net mynetwork jmalloc/echo-server
+# docker run -d --name web2 --net mynetwork jmalloc/echo-server
+# docker run -d --name web3 --net mynetwork jmalloc/echo-server
+# docker run -d --name haproxy --net mynetwork \
+# -v $(pwd):/usr/local/etc/haproxy:ro -p 80:80 haproxytech/haproxy-alpine:2.7
+
+services:
+  web:
+    # balance     roundrobin
+    # server  s1 07_haproxy-compose-web-1:8080 check
+    #               폴더명  -   서비스 이름 - auto_nu
+
+    # 실행 시
+    # docker compose up -d --scale web=3
+    # web 이라는 서비스를 3개 실행한다.
+    image: jmalloc/echo-server
+    
+
+  haproxy:
+    image: haproxytech/haproxy-alpine:2.7
+    ports:
+      - "80:80"
+    volumes:
+      - "./config:/usr/local/etc/haproxy:ro"
+    depends_on:
+      - web
+    # health check가 있어서 웹 보다 앞단인 haproxy가 먼저 뜨면
+    # 웹 서비스의 healthcheck를 못하게 된다

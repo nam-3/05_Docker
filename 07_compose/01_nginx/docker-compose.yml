@@ -1,0 +1,18 @@
+# docker run --name some-nginx \
+# -v /some/content:/usr/share/nginx/html:ro -d nginx
+services:
+  # 서비스 이름 : web , 컨테이너 이름과 별개
+  web:
+    # container_name: some-nginx , 안주는 걸 권장함
+    image: nginx
+    # 백그라운드로 실행 (-d 옵션): docker compose up -d 
+
+    # 바인드 마운트
+    # 이후 서비스 다운 시 해당 폴더는 따로 삭제해줘야함
+    volumes:
+      - "/some/content:/usr/share/nginx/html:ro"
+
+
+#volumes:
+#networks:
+

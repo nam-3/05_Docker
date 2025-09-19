@@ -1,0 +1,5 @@
+FROM ubuntu:24.04
+
+# 기본값 : top -d 10
+ENTRYPOINT ["top"]
+CMD ["-d", "10"]
