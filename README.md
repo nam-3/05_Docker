@@ -37,8 +37,9 @@ docker run -d --name mydb -p 3306:3306 \
 
 # 컨테이너에 쉘 프로세스 실행
 docker exec -it myweb /bin/bash
-
+```
 ---
+
 | 옵션                | 설명                     |
 | ----------------- | ---------------------- |
 | `-d`              | 백그라운드(detached) 모드 실행  |
