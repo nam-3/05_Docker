@@ -7,13 +7,13 @@ Docker 학습 정리 노트입니다.
 
 ## 📘 학습 목차
 
-1️⃣ [IT 인프라 기본 지식](https://www.notion.so/1-IT-26a1400eefa5801a9312d7a2d53cf788?pvs=21)  
-2️⃣ [컨테이너와 Docker](https://www.notion.so/2-Docker-26a1400eefa5806996e3e7be168274f9?pvs=21)  
-3️⃣ [도커 설치](https://www.notion.so/3-26a1400eefa580c6814cce2905e0871b?pvs=21)  
-4️⃣ [도커 이미지 & 컨테이너 관리](https://www.notion.so/4-26b1400eefa58003952bc3f0ff4144c5?pvs=21)  
-5️⃣ [Dockerfile](https://www.notion.so/5-Dockerfile-26f1400eefa580c6aef8c0a0e1a3c9b9?pvs=21)  
-6️⃣ [이미지 레지스트리](https://www.notion.so/6-2721400eefa5807eb0e3c1677b59609a?pvs=21)  
-7️⃣ [docker-compose](https://www.notion.so/7-docker-compose-2721400eefa580fca21bc3c86a3a3658?pvs=21)
+1️⃣ [IT 인프라 기본 지식]
+2️⃣ [컨테이너와 Docker](https://www.notion.so/2-Docker-26a1400eefa5806996e3e7be168274f9?source=copy_link)  
+3️⃣ [도커 설치](https://www.notion.so/3-26a1400eefa580c6814cce2905e0871b?source=copy_link)  
+4️⃣ [도커 이미지 & 컨테이너 관리](https://www.notion.so/4-26b1400eefa58003952bc3f0ff4144c5?source=copy_link)  
+5️⃣ [Dockerfile](https://www.notion.so/5-Dockerfile-26f1400eefa580c6aef8c0a0e1a3c9b9?source=copy_link)  
+6️⃣ [이미지 레지스트리](https://www.notion.so/6-2721400eefa5807eb0e3c1677b59609a?source=copy_link)  
+7️⃣ [docker-compose](https://www.notion.so/7-docker-compose-2721400eefa580fca21bc3c86a3a3658?source=copy_link)
 
 ---
 
